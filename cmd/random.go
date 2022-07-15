@@ -83,7 +83,7 @@ func randomiseJokeList(length int, jokeList []Joke) {
 	max := length - 1
 
 	if length <= 0 {
-		err := fmt.Errorf("No jokes with the search Term ")
+		err := fmt.Errorf("no jokes with the search term ")
 		fmt.Println(err.Error())
 	} else {
 		randomNum := min + rand.Intn(max-min)
